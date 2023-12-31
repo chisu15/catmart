@@ -52,6 +52,8 @@
             </a>
         </div>
     </div>
+
+
     <div class="sticky_scroll">
         <div class="header">
             <img id="logo" src="Image/logo.png">
@@ -61,12 +63,12 @@
             </div>
             <div class="gio_hang">
                 <div class="gio_hang_img">
-                    <a href="../gio_hang/index.html">
+                    <a href="/gio_hang/index.html">
                         <img src="Image/shopping bag.png">
-                        <p>0</p>
+                        <p>2</p>
                     </a>
                 </div>
-                <a href="../gio_hang/index.html">
+                <a href="/gio_hang/index.html">
                     <p>Giỏ hàng</p>
                 </a>
             </div>
@@ -81,7 +83,7 @@
         <div class="nav_bar">
             <ul class="dieu_huong">
                 <li>
-                    <a class="nav_text" href="../Homepage/index.html"> Trang chủ </a>
+                    <a class="nav_text" href="/Homepage/index.html"> Trang chủ </a>
                 </li>
                 <li>
                     <a class="nav_text" href="/Sale/index.html"> Ưu đãi </a>
@@ -93,7 +95,7 @@
                     <a class="nav_text" href="/ve_chung_toi/index.html"> Về chúng tôi </a>
                 </li>
                 <li>
-                    <a class="nav_text" href="#lienhe"> Liên hệ </a>
+                    <a class="nav_text" href="/lien_he/index.html"> Liên hệ </a>
                 </li>
             </ul>
         </div>
@@ -105,62 +107,87 @@
     </div>
 
     <div class="content0">
-        <h1>GIỎ HÀNG</h1>
-        <p><strong>Catmart</strong> - Đại lý thức ăn cho mèo</p>
+        <div class="title-content">
+            <h1>GIỎ HÀNG</h1>
+            <p><strong>Catmart</strong> - Đại lý thức ăn cho mèo</p>
+        </div>
+        <div class="total-pay">
+            <table>
+                <tr>
+                    <th><input class="checkbox" type="checkbox" onclick="toggle(this)"></th>
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th style="width: 140px;">Xóa</th>
+                </tr>
+                <tr>
+                    <td><input class="checkbox" type="checkbox" name="foo"></td>
+                    <td>Pate Cho Mèo Purina Proplan 85g</td>
+                    <td> 30.000Đ</td>
+                    <td><input type="number" min="1" placeholder="1"></td>
+                    <td> 30.000Đ</td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 48 44" fill="none">
+                            <mask id="mask0_922_6849" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="10" y="9"
+                                width="28" height="28">
+                                <rect x="10" y="9" width="28" height="28" fill="#D9D9D9" />
+                            </mask>
+                            <g mask="url(#mask0_922_6849)">
+                                <path
+                                    d="M18.1665 33.5C17.5248 33.5 16.9755 33.2715 16.5186 32.8146C16.0616 32.3576 15.8332 31.8083 15.8332 31.1667V16H14.6665V13.6667H20.4998V12.5H27.4998V13.6667H33.3332V16H32.1665V31.1667C32.1665 31.8083 31.938 32.3576 31.4811 32.8146C31.0241 33.2715 30.4748 33.5 29.8332 33.5H18.1665ZM29.8332 16H18.1665V31.1667H29.8332V16ZM20.4998 28.8333H22.8332V18.3333H20.4998V28.8333ZM25.1665 28.8333H27.4998V18.3333H25.1665V28.8333Z"
+                                    fill="#3E3F3F" />
+                            </g>
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="checkbox" type="checkbox" name="foo"></td>
+                    <td>Pate Cho Mèo Purina Proplan 85g</td>
+                    <td>30.000Đ</td>
+                    <td><input type="number" min="1" placeholder="1"></td>
+                    <td>30.000Đ</td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 48 44" fill="none">
+                            <mask id="mask0_922_6849" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="10" y="9"
+                                width="28" height="28">
+                                <rect x="10" y="9" width="28" height="28" fill="#D9D9D9" />
+                            </mask>
+                            <g mask="url(#mask0_922_6849)">
+                                <path
+                                    d="M18.1665 33.5C17.5248 33.5 16.9755 33.2715 16.5186 32.8146C16.0616 32.3576 15.8332 31.8083 15.8332 31.1667V16H14.6665V13.6667H20.4998V12.5H27.4998V13.6667H33.3332V16H32.1665V31.1667C32.1665 31.8083 31.938 32.3576 31.4811 32.8146C31.0241 33.2715 30.4748 33.5 29.8332 33.5H18.1665ZM29.8332 16H18.1665V31.1667H29.8332V16ZM20.4998 28.8333H22.8332V18.3333H20.4998V28.8333ZM25.1665 28.8333H27.4998V18.3333H25.1665V28.8333Z"
+                                    fill="#3E3F3F" />
+                            </g>
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h4 class="total-pay">
+                            Tổng thanh toán:
+                        </h4>
+                    </td>
+                    <td>
+                        <h4>
+                            60.000Đ
+                        </h4>
+                    </td>
+                    <td class="buy-hover">
+                        <a href="/thanh_toan/index.html">
+                            <button class="thanh-toan-btn">
+                                <b>Mua hàng</b>
+                                <br>
+                                <p>[2]</p>
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
     </div>
 
-    <div>
-        <table>
-            <tr>
-                <th><input class="checkbox" type="checkbox" onclick="toggle(this)"></th>
-                <th>Tên sản phẩm</th>
-                <th>Đơn giá</th>
-                <th>Số lượng</th>
-                <th>Thành tiền</th>
-                <th>Xóa</th>
-            </tr>
-            <tr>
-                <td><input class="checkbox" type="checkbox" name="foo"></td>
-                <td>Pate Cho Mèo Purina Proplan 85g</td>
-                <td> 30.000Đ</td>
-                <td><input type="number" min="1" placeholder="1"></td>
-                <td> 30.000Đ</td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 48 44" fill="none">
-                        <mask id="mask0_922_6849" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="10" y="9"
-                            width="28" height="28">
-                            <rect x="10" y="9" width="28" height="28" fill="#D9D9D9" />
-                        </mask>
-                        <g mask="url(#mask0_922_6849)">
-                            <path
-                                d="M18.1665 33.5C17.5248 33.5 16.9755 33.2715 16.5186 32.8146C16.0616 32.3576 15.8332 31.8083 15.8332 31.1667V16H14.6665V13.6667H20.4998V12.5H27.4998V13.6667H33.3332V16H32.1665V31.1667C32.1665 31.8083 31.938 32.3576 31.4811 32.8146C31.0241 33.2715 30.4748 33.5 29.8332 33.5H18.1665ZM29.8332 16H18.1665V31.1667H29.8332V16ZM20.4998 28.8333H22.8332V18.3333H20.4998V28.8333ZM25.1665 28.8333H27.4998V18.3333H25.1665V28.8333Z"
-                                fill="#3E3F3F" />
-                        </g>
-                    </svg>
-                </td>
-            </tr>
-            <tr>
-                <td><input class="checkbox" type="checkbox" name="foo"></td>
-                <td>Pate Cho Mèo Purina Proplan 85g</td>
-                <td>30.000Đ</td>
-                <td><input type="number" min="1" placeholder="1"></td>
-                <td>30.000Đ</td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 48 44" fill="none">
-                        <mask id="mask0_922_6849" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="10" y="9"
-                            width="28" height="28">
-                            <rect x="10" y="9" width="28" height="28" fill="#D9D9D9" />
-                        </mask>
-                        <g mask="url(#mask0_922_6849)">
-                            <path
-                                d="M18.1665 33.5C17.5248 33.5 16.9755 33.2715 16.5186 32.8146C16.0616 32.3576 15.8332 31.8083 15.8332 31.1667V16H14.6665V13.6667H20.4998V12.5H27.4998V13.6667H33.3332V16H32.1665V31.1667C32.1665 31.8083 31.938 32.3576 31.4811 32.8146C31.0241 33.2715 30.4748 33.5 29.8332 33.5H18.1665ZM29.8332 16H18.1665V31.1667H29.8332V16ZM20.4998 28.8333H22.8332V18.3333H20.4998V28.8333ZM25.1665 28.8333H27.4998V18.3333H25.1665V28.8333Z"
-                                fill="#3E3F3F" />
-                        </g>
-                    </svg>
-                </td>
-            </tr>
-        </table>
-    </div>
+
 
     <div class="footer">
         <div class="foot_left">
@@ -172,14 +199,14 @@
         </div>
         <div class="policy">
             <p><strong> CHÍNH SÁCH </strong></p>
-            <a href="#Doi_tra">Chính sách đổi trả</a>
-            <a href="#Doi_tra">Chính sách bảo mật</a>
-            <a href="#Doi_tra">Chính sách giao hàng</a>
+            <a href="/chinh_sach_doi_tra/index.html">Chính sách đổi trả</a>
+            <a href="/chinh_sach_bao_mat/index.html">Chính sách bảo mật</a>
+            <a href="/chinh_sach_giao_hang/index.html">Chính sách giao hàng</a>
         </div>
         <div class="ho_tro">
             <p> <strong>HỖ TRỢ KHÁCH HÀNG</strong></p>
-            <a href="#Doi_tra">Hướng dẫn mua hàng</a>
-            <a href="#Doi_tra">Hướng dẫn thanh toán</a>
+            <a href="/huong_dan_mua_hang/index.html">Hướng dẫn mua hàng</a>
+            <a href="/huong_dan_thanh_toan/index.html">Hướng dẫn thanh toán</a>
         </div>
         <div class="foot_right">
             <p><strong>KẾT NỐI VỚI CHÚNG TỐI</strong></p>

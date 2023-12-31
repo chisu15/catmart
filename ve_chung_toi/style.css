@@ -474,7 +474,17 @@ label {
     font-size: 16px;
 }
 
+.gio_hang_img a {
+    margin-bottom: -13px;
+}
 
+.gio_hang a
+{
+    text-decoration: none;
+    color: #CE3800;
+    width: fit-content;
+    height: fit-content;
+}
 
 .gio_hang p {
     /* height: 24px;
@@ -822,6 +832,7 @@ h3 {
     position: relative;
     padding: 0 20.8%;
     padding-bottom: 40px;
+    
 }
 .content{
     background-image: url("image/9.png");

@@ -441,18 +441,12 @@ label {
     color: #CE3800;
     padding-top: 18px;
 }
+
 .gio_hang img {
     height: 24px;
     width: 22px;
 }
-.gio_hang a
-{
-    text-decoration: none;
-    color: #CE3800;
-    /* border: #AC3C12 solid; */
-    width: fit-content;
-    height: fit-content;
-}
+
 .gio_hang_img {
     position: relative;
     display: flex;
@@ -460,10 +454,7 @@ label {
     justify-content: center;
     align-items: center;
 }
-.gio_hang_img a
-{
-    margin-bottom: -13px;
-}
+
 .gio_hang_img p {
     position: absolute;
     display: flex;
@@ -483,7 +474,16 @@ label {
     font-size: 16px;
 }
 
+.gio_hang_img a {
+    margin-bottom: -13px;
+}
 
+.gio_hang a {
+    text-decoration: none;
+    color: #CE3800;
+    width: fit-content;
+    height: fit-content;
+}
 
 .gio_hang p {
     /* height: 24px;
@@ -492,6 +492,7 @@ label {
     margin: 0;
     font-weight: bold;
 }
+
 
 .lien_he {
     display: flex;
@@ -800,30 +801,34 @@ h3 {
     width: 1px;
     height: 360px;
 }
-#ve_chung_toi{
+
+#ve_chung_toi {
     border-bottom: 3px solid #AC3C12;
 }
-.dieu_huong_gio_hang{
+
+.dieu_huong_gio_hang {
     display: flex;
     align-items: center;
     border-bottom: 1.5px solid #ebebeb;
     padding: 0 0;
-    margin: 0 ;
+    margin: 0;
     line-height: 1.65;
     background-color: white;
 }
 
-.dieu_huong_gio_hang .line{
+.dieu_huong_gio_hang .line {
     margin: 0 8px;
     width: 1px;
     height: 12px;
     background-color: #000;
 }
-.dieu_huong_gio_hang p{
+
+.dieu_huong_gio_hang p {
     padding: 10px 0 5px 0;
-    margin: 0 ;
+    margin: 0;
     /* line-height: 16px; */
 }
+
 .dieu_huong_gio_hang p:first-child {
     margin-left: 20.8%;
 }
@@ -831,39 +836,78 @@ h3 {
 
 .content0 {
     padding: 0 20.8%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.content0 h1{
-    margin: 20px 0 0 0 ;
-}
-.content0 p:first-of-type {
-    margin: 0 0 16px 0 ;
-}
-table{
+
+.title-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
+}
+
+.content0 h1 {
+    margin: 20px 0 0 0;
+}
+
+.content0 p:first-of-type {
+    margin: 0 0 16px 0;
+}
+
+table {
+    width: 100vw;
     padding: 0 20.8%;
     border-spacing: 0;
-    margin-bottom: 10%;
 }
-td, th {
+
+td,
+th {
     text-align: center;
 }
+
 table input {
     width: 33px;
     height: 16px;
 }
+
 th {
     background-color: #FFAA7F;
     padding: 8px 0 0 0;
-    border-bottom: 1.5px solid #dedede ;
+    border-bottom: 1.5px solid #dedede;
 }
+
 .checkbox {
     padding: 0 0 0 0;
     margin: 10px 0 0 0;
 }
+
 td {
     padding: 24px 0 20px 0;
-    border-bottom: 1.5px solid #dedede ;
+    border-bottom: 1.5px solid #dedede;
 }
 
+.thanh-toan-btn {
+    padding-inline: 22px;
+    width: 135px;
+    height: 50px;
+    border-radius: 24px;
+    background-color: #D35E31;
+    border: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Baloo Bhaina 2";
+    line-height: 20px;
+    padding-top: 10px;
+    margin-top: 6px;
+}
 
+table td .total-pay {
+    text-align: right;
+}
+.buy-hover button:hover {
+    -moz-box-shadow: inset 0 0 10px #AC3C12;
+    -webkit-box-shadow: inset 0 0 10px #AC3C12;
+    box-shadow: inset 0 0 10px #AC3C12;
+}
